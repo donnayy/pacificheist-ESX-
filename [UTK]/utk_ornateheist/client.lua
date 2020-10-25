@@ -213,6 +213,7 @@ function UTK:HandleInfo()
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
                                             if output then
+						TriggerServerEvent("utk_oh:removeitem", "laptop_h")
                                                 UTK.checks.hack1 = true
                                                 self.currenthack = 0
                                                 self:Hack()
@@ -231,6 +232,7 @@ function UTK:HandleInfo()
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
                                             if output then
+						TriggerServerEvent("utk_oh:removeitem", "laptop_h")
                                                 UTK.checks.hack2 = true
                                                 self.info.stage = 2
                                                 self.currenthack = 1
